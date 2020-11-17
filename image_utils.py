@@ -1,9 +1,8 @@
-import os
-import sys
 from base64 import b64encode
 from io import BytesIO
 
 from PIL import Image
+
 
 def image2base64(filename):
     image = Image.open(filename)
