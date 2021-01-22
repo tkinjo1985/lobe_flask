@@ -21,7 +21,7 @@ from image_utils import image2base64
 url = 'http://localhost:5000/predict_from_base64/'
 
 # Image convert to base64
-image_base64 = image2base64('sample_image/cat/cat.102.jpg')
+image_base64 = image2base64(IMAGEFILE(.jpeg or .jpg or .png))
 
 # send predict requests
 label = predict_from_base64(image_base64, url)
@@ -36,7 +36,7 @@ from request_utils import predict_from_image
 url = 'http://localhost:5000/predict_from_image/'
 
 # send predict requests
-label = predict_from_image('sample_image/cat/cat.103.jpg', url)
+label = predict_from_image(IMAGEFILE(.jpeg or .jpg or .png), url)
 print(label)
 ```
 
