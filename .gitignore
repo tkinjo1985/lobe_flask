@@ -140,3 +140,5 @@ dmypy.json
 cython_debug/
 
 .vscode
+sample_predict_request.py
+/sample_image

@@ -1,6 +1,7 @@
 import base64
 import json
 from io import BytesIO
+from PIL import Image
 
 import cv2
 import numpy as np
@@ -40,6 +41,6 @@ def predict_from_image():
     return Response(json.dumps({'label': label}))
 
 
-@ app.route('/upload_image/', methods=['GET'])
+@ app.route('/', methods=['GET'])
 def upload_file():
     return render_template('upload_image.html')
