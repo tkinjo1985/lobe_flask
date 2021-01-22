@@ -1,7 +1,6 @@
 import base64
 import json
 from io import BytesIO
-from PIL import Image
 
 import cv2
 import numpy as np
